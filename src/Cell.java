@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Cell {
     int row, col;
 
@@ -24,6 +26,19 @@ public class Cell {
 
     @Override
     public String toString() {
-        return "Cell [row=" + row + ", col=" + col + "]";
+        return "Cell [" + row + "," + col + "]";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Cell)) return false;
+        Cell cell = (Cell) o;
+        return row == cell.row && col == cell.col;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(row, col);
     }
 }

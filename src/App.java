@@ -3,7 +3,7 @@ import java.util.List;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        // runEjerciciosPD();
+        //runEjercicioPD();
         runMaze();
     }
 
@@ -11,7 +11,7 @@ public class App {
         EjercicioPD ejerciciosPD = new EjercicioPD();
         System.out.println("Fibonacci Recursivo");
         long start = System.nanoTime();
-        long resultado = ejerciciosPD.getFibonacci(100);
+        long resultado = ejerciciosPD.getFibonacci(30);
         long end = System.nanoTime();
         long duration = end - start;
         System.out.println("resultado: " + resultado + " en tiempo: " + duration);
