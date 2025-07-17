@@ -7,7 +7,7 @@ public class App {
         runMaze();
     }
 
-    private static void runEjerciciosPD() {
+    private static void runEjercicioPD() {
         EjercicioPD ejerciciosPD = new EjercicioPD();
         System.out.println("Fibonacci Recursivo");
         long start = System.nanoTime();
